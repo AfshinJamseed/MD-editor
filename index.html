@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Edit-md</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">SyncMD</div>
+        <div class="upload-download">
+            <div class="upload">
+                <i class="fa-solid fa-upload"></i>
+            </div>
+            <div class="download">
+                <i class="fa-solid fa-download"></i>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="editor">
+            <div class="toolbar">
+                <p class="e-title">Editor</p>
+                <div class="tools">
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-bold"></i></button>
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-strikethrough"></i></button>
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-link"></i></button>
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-list"></i></button>
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-list-ol"></i></button>
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-code"></i></button>
+                    <button style="background: none;border: 0;"><i class="fa-solid fa-quote-left"></i></button>
+                </div>
+
+            </div>
+
+            <textarea id="md-input" placeholder="Start writing markdown"></textarea>
+        </section>
+
+        <section class="preview">
+            <div class="toolbar">
+                <p class="e-title">Preview</p>
+            </div>
+            <div class="content"><!-- Dynamically added --></div>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
